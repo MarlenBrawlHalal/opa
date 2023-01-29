@@ -4,14 +4,16 @@ html, body {
 }
 
 body {
-    text-align: center;
     font-family: 'Caveat', 'Cursive';
+    margin: 0;
     font-size: 160%;
     background-color:rgba(220, 220, 220, 0.444);
 }
 
 img {
     margin-top: 5px;
+    max-width: 350px;
+    min-width: 200px;
     width: 30%;
     transition: all 1.4s;
     border-radius: 15%;
@@ -28,8 +30,34 @@ p {
     margin-bottom: 0;
 }
 
-.contact-me {
-    margin-top: 25px;
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info {
+    max-width: 800px;
+    max-height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.info-first-container, .info-second-container {
+    max-width: 250px;
+}
+
+.poll {
+    text-align: center;
+}
+
+.footer {
+    /* margin-top: 25px; */
     background-color: rgb(213, 210, 210);
     width: 100%;
     height: 100px;
